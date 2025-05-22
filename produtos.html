@@ -27,74 +27,122 @@
 
     <main>
         <section class="products-header">
-            <h2>Nossos Produtos</h2>
-            <div class="category-nav">
-                <div class="main-categories">
-                    <a href="categorias/masculino.html" class="category-btn">
-                        <i class="fas fa-male"></i>
-                        Masculino
-                    </a>
-                    <a href="categorias/feminino.html" class="category-btn">
-                        <i class="fas fa-female"></i>
-                        Feminino
-                    </a>
+            <h2>Nossa Coleção de Jeans</h2>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Pesquisar produtos...">
+            </div>
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="style-filter">Modelo:</label>
+                    <select id="style-filter">
+                        <option value="todos">Todos os Modelos</option>
+                        <option value="skinny">Skinny</option>
+                        <option value="mom">Mom Jeans</option>
+                        <option value="flare">Flare</option>
+                        <option value="boyfriend">Boyfriend</option>
+                        <option value="wide">Wide Leg</option>
+                        <option value="reta">Reta</option>
+                        <option value="bootcut">Bootcut</option>
+                    </select>
                 </div>
-                <div class="sub-categories">
-                    <a href="categorias/camisetas.html" class="category-btn">
-                        <i class="fas fa-tshirt"></i>
-                        Camisetas
-                    </a>
-                    <a href="categorias/calcados.html" class="category-btn">
-                        <i class="fas fa-shoe-prints"></i>
-                        Calçados
-                    </a>
-                    <a href="categorias/calcas.html" class="category-btn">
-                        <i class="fas fa-socks"></i>
-                        Calças
-                    </a>
+
+                <div class="filter-group">
+                    <label for="category-filter">Categoria:</label>
+                    <select id="category-filter">
+                        <option value="todos">Todas as Categorias</option>
+                        <option value="casual">Casual</option>
+                        <option value="festa">Festa</option>
+                        <option value="destroyed">Destroyed</option>
+                        <option value="basico">Básico</option>
+                        <option value="vintage">Vintage</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="condition-filter">Condição:</label>
+                    <select id="condition-filter">
+                        <option value="todos">Todas</option>
+                        <option value="novo">Novo</option>
+                        <option value="usado">Usado</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="size-filter">Tamanho:</label>
+                    <select id="size-filter">
+                        <option value="todos">Todos os Tamanhos</option>
+                        <option value="34">34</option>
+                        <option value="36">36</option>
+                        <option value="38">38</option>
+                        <option value="40">40</option>
+                        <option value="42">42</option>
+                        <option value="44">44</option>
+                        <option value="46">46</option>
+                    </select>
                 </div>
             </div>
+            <button id="clear-filters" class="clear-filters-btn">Limpar Filtros</button>
         </section>
 
         <section class="featured-items">
-            <h3>Destaques da Semana</h3>
+            <h3>Jeans em Destaque</h3>
             <div class="products-grid">
-                <div class="product-card">
-                    <img src="https://placehold.co/300x300" alt="Camiseta Masculina">
+                <div class="product-card" data-category="casual" data-condition="usado" data-size="38">
+                    <img src="https://placehold.co/300x400" alt="Calça Jeans Skinny">
                     <div class="product-info">
-                        <h4>Camiseta Básica Masculina</h4>
-                        <p class="price">R$ 39,90</p>
-                        <p class="category-tag">Masculino - Camisetas</p>
+                        <div class="tags-container">
+                            <p class="category-tag">Skinny</p>
+                            <p class="size-tag">Tam. 38</p>
+                        </div>
+                        <h4>Calça Jeans Skinny Cintura Alta</h4>
+                        <p class="description">Modelagem ajustada com lavagem escura</p>
+                        <p class="price">R$ 129,90</p>
+                        <p class="condition-tag">Usado - Ótimo estado</p>
                         <button class="interest-btn">Tenho Interesse</button>
                     </div>
                 </div>
 
-                <div class="product-card">
-                    <img src="https://placehold.co/300x300" alt="Vestido Feminino">
+                <div class="product-card" data-category="vintage" data-condition="usado" data-size="40">
+                    <img src="https://placehold.co/300x400" alt="Mom Jeans">
                     <div class="product-info">
-                        <h4>Vestido Floral</h4>
-                        <p class="price">R$ 89,90</p>
-                        <p class="category-tag">Feminino - Vestidos</p>
+                        <div class="tags-container">
+                            <p class="category-tag">Mom Jeans</p>
+                            <p class="size-tag">Tam. 40</p>
+                        </div>
+                        <h4>Mom Jeans Vintage</h4>
+                        <p class="description">Cintura super alta com lavagem média</p>
+                        <p class="price">R$ 149,90</p>
+                        <p class="condition-tag">Usado - Excelente estado</p>
                         <button class="interest-btn">Tenho Interesse</button>
                     </div>
                 </div>
 
-                <div class="product-card">
-                    <img src="https://placehold.co/300x300" alt="Tênis Casual">
+                <div class="product-card" data-category="festa" data-condition="novo" data-size="36">
+                    <img src="https://placehold.co/300x400" alt="Calça Flare">
                     <div class="product-info">
-                        <h4>Tênis Casual Unissex</h4>
+                        <div class="tags-container">
+                            <p class="category-tag">Flare</p>
+                            <p class="size-tag">Tam. 36</p>
+                        </div>
+                        <h4>Calça Jeans Flare</h4>
+                        <p class="description">Modelagem que se abre a partir do joelho</p>
                         <p class="price">R$ 159,90</p>
-                        <p class="category-tag">Calçados</p>
+                        <p class="condition-tag">Novo com etiqueta</p>
                         <button class="interest-btn">Tenho Interesse</button>
                     </div>
                 </div>
 
-                <div class="product-card">
-                    <img src="https://placehold.co/300x300" alt="Calça Jeans">
+                <div class="product-card" data-category="basico" data-condition="novo" data-size="42">
+                    <img src="https://placehold.co/300x400" alt="Wide Leg Jeans">
                     <div class="product-info">
-                        <h4>Calça Jeans Feminina</h4>
-                        <p class="price">R$ 119,90</p>
-                        <p class="category-tag">Feminino - Calças</p>
+                        <div class="tags-container">
+                            <p class="category-tag">Wide Leg</p>
+                            <p class="size-tag">Tam. 42</p>
+                        </div>
+                        <h4>Wide Leg Jeans</h4>
+                        <p class="description">Perna larga e cintura alta</p>
+                        <p class="price">R$ 139,90</p>
+                        <p class="condition-tag">Novo</p>
                         <button class="interest-btn">Tenho Interesse</button>
                     </div>
                 </div>
@@ -103,9 +151,9 @@
 
         <section class="products-info">
             <div class="info-card">
-                <i class="fas fa-truck"></i>
-                <h4>Retirada na Loja</h4>
-                <p>Retire suas compras em nossa loja física</p>
+                <i class="fas fa-ruler"></i>
+                <h4>Medidas Precisas</h4>
+                <p>Todas as peças com medidas detalhadas</p>
             </div>
             <div class="info-card">
                 <i class="fas fa-credit-card"></i>
@@ -113,9 +161,9 @@
                 <p>Aceitamos diversas formas de pagamento</p>
             </div>
             <div class="info-card">
-                <i class="fas fa-heart"></i>
-                <h4>Produtos Selecionados</h4>
-                <p>Itens cuidadosamente escolhidos para você</p>
+                <i class="fas fa-check-circle"></i>
+                <h4>Qualidade Garantida</h4>
+                <p>Jeans selecionados e em ótimo estado</p>
             </div>
         </section>
     </main>
@@ -144,5 +192,6 @@
             <p>&copy; 2025 Bazar Rainha da Paz. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html> 

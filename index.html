@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bazar Rainha da Paz</title>
+    <title>Bazar Rainha da Paz - Especialista em Jeans Feminino</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -28,45 +28,120 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h2>Bem-vindo ao Bazar Rainha da Paz</h2>
-                <p>Descubra peças únicas e especiais para você e sua família</p>
-                <a href="produtos.html" class="cta-button">Ver Produtos</a>
+                <h2>O Melhor do Jeans Feminino</h2>
+                <p>Encontre peças únicas e especiais com preços que cabem no seu bolso</p>
+                <div class="hero-buttons">
+                    <a href="produtos.html" class="cta-button">Ver Produtos</a>
+                    <a href="#estilos" class="secondary-button">Explorar Estilos</a>
+                </div>
             </div>
         </section>
 
-        <section class="featured-categories">
-            <h2>Categorias em Destaque</h2>
-            <div class="category-grid">
-                <div class="category-card">
-                    <a href="categorias/camisetas.html">
-                        <img src="https://placehold.co/300x200" alt="Camisetas">
-                        <h3>Camisetas</h3>
-                    </a>
+        <section class="benefits">
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Entrega Segura</h3>
+                    <p>Enviamos para toda região</p>
                 </div>
-                <div class="category-card">
-                    <a href="categorias/calcados.html">
-                        <img src="https://placehold.co/300x200" alt="Calçados">
-                        <h3>Calçados</h3>
-                    </a>
+                <div class="benefit-card">
+                    <i class="fas fa-medal"></i>
+                    <h3>Qualidade Garantida</h3>
+                    <p>Peças selecionadas</p>
                 </div>
-                <div class="category-card">
-                    <a href="categorias/calcas.html">
-                        <img src="https://placehold.co/300x200" alt="Calças">
-                        <h3>Calças</h3>
-                    </a>
+                <div class="benefit-card">
+                    <i class="fas fa-tags"></i>
+                    <h3>Preços Justos</h3>
+                    <p>Custo-benefício incrível</p>
                 </div>
-                <div class="category-card">
-                    <a href="categorias/masculino.html">
-                        <img src="https://placehold.co/300x200" alt="Masculino">
-                        <h3>Masculino</h3>
-                    </a>
+                <div class="benefit-card">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h3>Troca Fácil</h3>
+                    <p>7 dias para trocar</p>
                 </div>
-                <div class="category-card">
-                    <a href="categorias/feminino.html">
-                        <img src="https://placehold.co/300x200" alt="Feminino">
-                        <h3>Feminino</h3>
-                    </a>
+            </div>
+        </section>
+
+        <section id="estilos" class="style-guide">
+            <h2>Encontre Seu Estilo</h2>
+            <div class="style-categories">
+                <a href="produtos.html?style=skinny" class="style-category">
+                    <img src="https://placehold.co/400x500" alt="Skinny">
+                    <div class="category-overlay">
+                        <h3>Skinny</h3>
+                        <p>Ajuste perfeito</p>
+                    </div>
+                </a>
+                <a href="produtos.html?style=mom" class="style-category">
+                    <img src="https://placehold.co/400x500" alt="Mom Jeans">
+                    <div class="category-overlay">
+                        <h3>Mom Jeans</h3>
+                        <p>Clássico renovado</p>
+                    </div>
+                </a>
+                <a href="produtos.html?style=wide" class="style-category">
+                    <img src="https://placehold.co/400x500" alt="Wide Leg">
+                    <div class="category-overlay">
+                        <h3>Wide Leg</h3>
+                        <p>Elegância e conforto</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="size-info">
+            <div class="size-content">
+                <div class="size-text">
+                    <h2>Encontre seu Tamanho Ideal</h2>
+                    <p>Use nossa tabela de medidas para encontrar o jeans perfeito para você</p>
+                    <ul class="size-features">
+                        <li><i class="fas fa-check"></i> Medidas precisas</li>
+                        <li><i class="fas fa-check"></i> Guia detalhado</li>
+                        <li><i class="fas fa-check"></i> Dicas de medição</li>
+                    </ul>
+                    <a href="sobre.html#medidas" class="size-button">Ver Guia de Medidas</a>
                 </div>
+                <div class="size-image">
+                    <img src="https://placehold.co/500x600" alt="Guia de Medidas">
+                </div>
+            </div>
+        </section>
+
+        <section class="instagram-feed">
+            <h2>Siga-nos no Instagram</h2>
+            <p>@bazarrainhadapaz</p>
+            <div class="instagram-grid">
+                <a href="#" class="insta-post">
+                    <img src="https://placehold.co/300x300" alt="Post Instagram">
+                    <div class="insta-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+                <!-- Mais posts do Instagram aqui -->
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Fique por Dentro das Novidades</h2>
+                <p>Receba ofertas exclusivas e dicas de moda no seu e-mail</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu melhor e-mail" required>
+                    <button type="submit">Inscrever-se</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="whatsapp-cta">
+            <div class="whatsapp-content">
+                <div class="whatsapp-text">
+                    <h2>Atendimento Personalizado</h2>
+                    <p>Tire suas dúvidas e receba atendimento exclusivo pelo WhatsApp</p>
+                </div>
+                <a href="https://wa.me/SEUNUMERO" class="whatsapp-button">
+                    <i class="fab fa-whatsapp"></i>
+                    Iniciar Conversa
+                </a>
             </div>
         </section>
     </main>
@@ -75,7 +150,7 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>Bazar Rainha da Paz</h3>
-                <p>Seu lugar para encontrar peças únicas e especiais.</p>
+                <p>Sua loja especializada em jeans feminino.</p>
             </div>
             <div class="footer-section">
                 <h3>Contato</h3>
@@ -92,8 +167,9 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Bazar Rainha da Paz. Todos os direitos reservados.</p>
+            <p>&copy; 2024 Bazar Rainha da Paz. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html> 
